@@ -14,6 +14,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 using Arithmetic.Code;
+using Arithmetic.Code.DFS_And_BFS;
 using BinaryTrees;
 
 namespace Arithmetic
@@ -27,8 +28,9 @@ namespace Arithmetic
         {
             InitializeComponent();
 
-            BinaryTreeDemo bt = new BinaryTreeDemo();
+            //BinaryTreeDemo bt = new BinaryTreeDemo();
             //HanoiTower ht = new HanoiTower();
+            DFS_BFS_Demo demo = new DFS_BFS_Demo();
             Console.ReadLine();
         }
     }
