@@ -74,6 +74,7 @@
     <Compile Include="Code\DivideConquerAlgorithm.cs" />
     <Compile Include="Code\GreedyAlgorithm.cs" />
     <Compile Include="Code\LinkedList.cs" />
+    <Compile Include="Code\ShellSort.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
