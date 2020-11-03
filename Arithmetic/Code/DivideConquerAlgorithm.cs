@@ -37,11 +37,13 @@ namespace Arithmetic.Code
             int key = arr[end];
             while (left < right)
             {
+                //如果left的值符合小于key，指针右移一位
                 while (arr[left] <= key && left < right)
                     left++;
+                //如果right的值符合大于key，指针左移一位
                 while (arr[right] >= key && right > left)
                     right--;
-
+                //这个时候只剩下左边大于key的值和右边小于key的值，兑换过来
                 Swap(arr, left, right);
 
                 if (arr[left] >= arr[end]) Swap(arr, left, end);
