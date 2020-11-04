@@ -30,8 +30,8 @@ namespace Arithmetic
 
             //BinaryTreeDemo bt = new BinaryTreeDemo();
             //HanoiTower ht = new HanoiTower();
-            //DFS_BFS_Demo demo = new DFS_BFS_Demo();
-            ShellSort.ShellSort shellSort = new ShellSort.ShellSort();
+            DFS_BFS_Demo demo = new DFS_BFS_Demo();
+            //ShellSort.ShellSort shellSort = new ShellSort.ShellSort();
             Console.ReadLine();
         }
     }
