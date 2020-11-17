@@ -37,6 +37,16 @@ namespace Arithmetic.Code.DFS_And_BFS
             Console.WriteLine("done........");
         }
 
+        /// <summary>
+        /// 深度优先算法（Death First Search），是一种用于遍历图或者搜索树的算法，是一种盲目搜索
+        /// 沿着树的深度去搜索节点，尽可能深的搜索树的分支，当节点V的所在边都已搜索完，搜索将回溯到节点V所在边的起始节点。
+        /// 这个过程一直进行到已发现从源节点可达的所有节点为止。如果还有其他节点未访问，则另选一个未被访问到的节点重复上述过程。
+        /// 重复上述过程，知道所有节点全部被访问。
+        /// 思想：不撞南墙不回头/一条路走到黑。
+        /// </summary>
+        /// <param name="use"></param>
+        /// <param name="_targetX"></param>
+        /// <param name="_targetY"></param>
         public void DFS(int[][] use, int _targetX, int _targetY)
         {
             if (_targetX == 9 && _targetY == 7)
@@ -78,9 +88,19 @@ namespace Arithmetic.Code.DFS_And_BFS
             }
         }
 
+
+        /// <summary>
+        /// 广度优先搜索（Breadth First Search），是一种图形搜索算法，属于盲目搜索
+        /// 1、将根节点放入队列中
+        /// 2、从队列中取出第一个节点，并检验是否为目标节点,找到了则结束搜索并回传结果。否则将他尚未检验的子节点加入到队列中。
+        /// 3、若队列为空，则说明整个图都检验完了 
+        /// 4、重复步骤2
+        /// 思想：多米若骨牌，层层倒塌，层层访问。
+        /// </summary>
         public void BFS()
         {
             int[][] next = new int[4][];
+            //定义4个方向，每次递归根据这4个方向来
             next[0] =new int[]{ 0,1};
             next[1] =new int[]{ 1,0};
             next[2] = new int[] { -1, 0 };
