@@ -73,6 +73,7 @@
     <Compile Include="Code\DFS_And_BFS\DFS_BFS_Demo.cs" />
     <Compile Include="Code\DivideConquerAlgorithm.cs" />
     <Compile Include="Code\GreedyAlgorithm.cs" />
+    <Compile Include="Code\HeapSort.cs" />
     <Compile Include="Code\LinkedList.cs" />
     <Compile Include="Code\ShellSort.cs" />
     <Compile Include="MainWindow.xaml.cs">

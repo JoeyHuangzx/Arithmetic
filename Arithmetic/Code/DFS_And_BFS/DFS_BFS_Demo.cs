@@ -18,6 +18,7 @@ namespace Arithmetic.Code.DFS_And_BFS
         private int[][] grids = new int[10][];
         private int miniStep = 0;
         private int step = 0;
+        private int roadIndex = 0;
 
         public DFS_BFS_Demo()
         {
@@ -49,6 +50,7 @@ namespace Arithmetic.Code.DFS_And_BFS
         /// <param name="_targetY"></param>
         public void DFS(int[][] use, int _targetX, int _targetY)
         {
+            //int num = 0;
             if (_targetX == 9 && _targetY == 7)
             {
                 // Console.WriteLine("===========================================");
@@ -61,7 +63,8 @@ namespace Arithmetic.Code.DFS_And_BFS
                     }
                     Console.WriteLine();
                 }
-                Console.WriteLine("---------------------------------------------------------------");
+                roadIndex++;
+                Console.WriteLine("---------------------------------------------------------------"+roadIndex);
 
                 return;
             }
@@ -123,7 +126,8 @@ namespace Arithmetic.Code.DFS_And_BFS
                         }
                         Console.WriteLine();
                     }
-                    Console.WriteLine("---------------------------------------------------------------");
+                    roadIndex++;
+                    Console.WriteLine("---------------------------------------------------------------"+roadIndex);
                     Console.WriteLine("到达。。。。。。。。。。。");
                     return;
                 }
